@@ -1,0 +1,83 @@
+body {
+    font-family: angie-sans, sans-serif;
+    font-weight: 200px;
+    font-style: normal;
+    color: #2A314E;
+    background-color: #FDF9F0;
+}
+.inline-block {
+    display: inline-block;
+    vertical-align: top;
+}
+.logo {
+    width: 23%;
+    padding: 1%;
+    text-align: center;
+}
+.nav {
+    width: 73%;
+    padding: 1%;
+}
+.ul {
+    width: 50%;
+    margin-left: auto;
+}
+.heroImg {
+    height: 600px;
+    padding: 25px;
+}
+.greeting {
+    font-family: fatboy, serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #2A314E;
+}
+.content {
+    width: 500px;
+    margin: 0 auto;
+}
+.flexContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.workGrid {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    grid-template-areas: 
+    "Haven"
+    "RoamingChef"
+    "BBBS";
+}
+.Haven {
+    grid-area: Haven;
+}
+.RoamingChef {
+    grid-area: RoamingChef;
+}
+.BBBS {
+    grid-area: BBBS;
+}
+
+.footer {
+    background-color: #373738;
+    text-align: center;
+}
+.footer ul {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+}
+.footer p {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+}
+@media only screen and (max-width: 600){
+    .flexContainer {
+        flex-direction: column;
+        grid-template-rows: 250px 250px 250px;
+    }
+}
+
